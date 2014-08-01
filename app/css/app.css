@@ -1,18 +1,13 @@
 /* app css stylesheet */
 
+header {box-shadow: 0 2px 2px #000; overflow: hidden;}
+.top-menu{width: 1000px; margin: 0 auto; }
 .menu {
   list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
+  margin: 2em 0;
   padding: 0 0 0.5em;
-}
-
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
+  float: right;
+  clear: both;
 }
 
 .menu > li {
@@ -28,3 +23,8 @@
   content: "";
   padding: 0;
 }
+
+a{color: red}
+.main-content {min-height: 400px; width: 1000px; margin:0 auto;}
+
+footer{background: #333; text-align: center; color: #fff; font-size: 12px; padding: 30px 0}
