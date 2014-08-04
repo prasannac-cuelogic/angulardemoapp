@@ -8,4 +8,15 @@ angular.module('myApp.directives', []).
     return function(scope, elm, attrs) {
       elm.text(version);
     };
-  }]);
+  }]).directive('headerBlock', function() {
+  	return {
+  		restrict: 'E',
+  		templateUrl: 'partials/header.html',
+  		controller: 'mainCtrl',
+  	}
+  }).directive('footerBlock', function() {
+  	return {
+  		restrict: 'E',
+  		templateUrl: 'partials/footer.html',
+  	}
+  });

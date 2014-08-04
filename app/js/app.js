@@ -14,13 +14,13 @@ config(['$routeProvider', function($routeProvider) {
             						'/home',
             						{
             							templateUrl: 'partials/hello.html',
-            							controller: 'fnHello'
+            							controller: 'fnHello',
             						}
                       );
   $routeProvider.when(
                         '/about-us', 
                         {
-                          templateUrl: 'partials/aboutme.html'
+                          templateUrl: 'partials/aboutme.html'                          
                         }
                       );
   $routeProvider.when(
@@ -43,7 +43,7 @@ config(['$routeProvider', function($routeProvider) {
                       );  
   $routeProvider.otherwise(
                             {
-                              redirectTo: '/home'
+                              redirectTo: '/home'                              
                             }
                           );
 }]);
