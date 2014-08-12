@@ -1,0 +1,33 @@
+<div class="form-login">
+<div>
+	<h2 class="text-center">Login</h2>
+</div>
+	<form method="post" ng-submit="login()" ng-controller="formValidationCtrl" name="login_form" id="login_form" novalidate>
+		<p class="error">{{errorMessage}}</p>
+		<ul>
+			<li>
+				<label>Username:</label>
+				<div>					
+					<input type="email" placeholder="abc@example.com" id="id_useremail" ng-model="useremail" name="useremail" required>
+					<div ng-show="login_form.useremail.$error.email">
+				      <p class="error">Invalid Email</p>
+				    </div>
+				</div>	
+			</li>
+			<li>
+				<label>Password:</label>
+				<div>
+					<input type="password" placeholder="Password" id="id_password" ng-model="password" name="password" required>
+				</div>
+				<div ng-show="login_form.password.$error.required">
+			      <p ng-show="submit">Password is required</p>
+			    </div>			
+			</li>
+			<li>
+				<div>					
+					<input class="login-button" type="submit" value="Login" id="button" name="submit" ng-disabled="disabled()">
+				</div>
+			</li>
+		</ul>
+	</form>
+</div>

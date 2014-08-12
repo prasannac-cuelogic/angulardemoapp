@@ -12,7 +12,7 @@ angular.module('myApp.directives', []).
   	return {
   		restrict: 'E',
   		templateUrl: 'partials/header.html',
-  		controller: 'mainCtrl',
+  		controller: 'menuCtrl',
   	}
   }).directive('footerBlock', function() {
   	return {
